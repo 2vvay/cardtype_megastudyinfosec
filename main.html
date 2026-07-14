@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>메가스터디교육 정보보안팀 카드뉴스</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+        :root {
+            --mega-blue: #0072CE;
+            --bg-color: #F7F9FC;
+            --text-dark: #1A1A1A;
+            --text-main: #2D3748;
+        }
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #e0e0e0;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        /* 1:1 카드 뉴스 슬라이드 정의 */
+        .card-slide {
+            width: 1080px;
+            height: 1080px;
+            background: white;
+            padding: 100px;
+            box-sizing: border-box;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* 슬라이드 내부 요소 */
+        .badge { display: inline-block; padding: 10px 20px; background: #E6F0FA; color: var(--mega-blue); border-radius: 50px; font-weight: 700; margin-bottom: 30px; }
+        h1 { font-size: 5rem; line-height: 1.2; letter-spacing: -0.04em; color: var(--text-dark); margin-bottom: 20px; }
+        h2 { font-size: 3.5rem; color: var(--text-dark); margin-bottom: 40px; }
+        p { font-size: 1.8rem; line-height: 1.6; color: var(--text-main); }
+        .highlight { color: var(--mega-blue); font-weight: 800; }
+        
+        /* 로고 하단 고정 */
+        .logo-footer { position: absolute; bottom: 80px; left: 100px; font-weight: 800; color: #ccc; }
+        .page-num { position: absolute; bottom: 80px; right: 100px; font-weight: 800; color: var(--mega-blue); font-size: 1.5rem; }
+
+        /* 그리드 카드 스타일 */
+        .grid-box { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        .item { padding: 40px; background: #F8FAFC; border-radius: 30px; border: 1px solid #E2E8F0; }
+        .item h3 { font-size: 2rem; color: var(--mega-blue); margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="card-slide">
+        <div class="badge">채용 안내</div>
+        <h1>메가스터디교육<br>정보보안팀<br><span class="highlight">안전한 배움의 기준</span></h1>
+        <p>1등 교육 플랫폼의 수백만 데이터를 수호하는<br>컨트롤 타워, 함께할 팀원을 찾습니다.</p>
+        <div class="logo-footer">MEGASTUDY EDU</div>
+        <div class="page-num">01 / 06</div>
+    </div>
+
+    <div class="card-slide">
+        <h2>우리의 핵심 미션</h2>
+        <p>메가스터디교육의 정보보안팀은 단순히 보안을 '통제'하는 곳이 아닙니다.</p>
+        <div style="margin-top: 50px; padding: 50px; background: var(--mega-blue); color: white; border-radius: 40px;">
+            <p style="color: white; font-size: 2.2rem; font-weight: 700;">"최고 수준의 ISMS 인증 획득 및 유지,<br>전사 보안 아키텍처 총괄"</p>
+        </div>
+        <p style="margin-top: 40px;">방화벽 통제부터 침해사고 모의훈련까지,<br>디지털 교육 환경의 무한한 가능성을 지킵니다.</p>
+        <div class="page-num">02 / 06</div>
+    </div>
+
+    <div class="card-slide">
+        <h2>주요 업무 영역</h2>
+        <div class="grid-box">
+            <div class="item">
+                <h3>📋 컴플라이언스</h3>
+                <p style="font-size: 1.4rem;">개인정보 처리 실태 점검 및 내부감사, 전사 보안 교육 운영</p>
+            </div>
+            <div class="item">
+                <h3>🎯 취약점 진단</h3>
+                <p style="font-size: 1.4rem;">웹/시스템 모의해킹 기획 및 위험 평가, 선제적 리스크 관리</p>
+            </div>
+            <div class="item" style="grid-column: span 2;">
+                <h3>🧱 인프라 보안</h3>
+                <p style="font-size: 1.4rem;">네트워크 트래픽 상시 모니터링 및 방화벽/접근제어 솔루션 운영</p>
+            </div>
+        </div>
+        <div class="page-num">03 / 06</div>
+    </div>
+
+    <div class="card-slide">
+        <h2>이런 분을 찾습니다</h2>
+        <ul style="font-size: 1.8rem; line-height: 2.5; padding-left: 40px;">
+            <li>🛡️ 정보보안 기초 지식 및 <span class="highlight">자격증 보유자</span></li>
+            <li>📑 ISMS/ISMS-P 인증 운영에 대한 <span class="highlight">관심과 열정</span></li>
+            <li>🤝 유관부서와 논리적으로 소통하는 <span class="highlight">커뮤니케이션 능력</span></li>
+            <li>🚀 낯선 기술도 빠르게 흡수하는 <span class="highlight">성장 태도</span></li>
+        </ul>
+        <div class="page-num">04 / 06</div>
+    </div>
+
+    <div class="card-slide">
+        <h2>현직자의 한마디</h2>
+        <div class="item" style="background: white; border: 2px solid var(--mega-blue); padding: 60px;">
+            <p style="font-size: 2rem; font-weight: 700; color: var(--text-dark);">"지원 공고(JD)를 꼼꼼히 분석하세요."</p>
+            <p style="margin-top: 30px;">"완벽한 지식보다는, 정보보안팀이 되기 위해 꾸준히 배우려는 마음과 그에 걸맞은 실행력을 보여주는 것이 합격의 열쇠입니다."</p>
+            <p style="margin-top: 30px; font-weight: 800;">- 위험관리 담당자 인터뷰 중</p>
+        </div>
+        <div class="page-num">05 / 06</div>
+    </div>
+
+    <div class="card-slide" style="background: var(--text-dark); color: white;">
+        <h2 style="color: white;">Apply Now</h2>
+        <p style="color: #ccc;">메가스터디교육과 함께<br>보안 전문가로 성장하세요.</p>
+        <div style="margin-top: 80px;">
+            <p style="color: white; font-size: 2rem; margin-bottom: 20px;">✅ 정규직 채용</p>
+            <p style="color: white; font-size: 2rem; margin-bottom: 20px;">✅ 주 5일 (09:00 - 18:00)</p>
+            <p style="color: white; font-size: 2rem; margin-bottom: 20px;">📍 메가스터디교육 서초 본사</p>
+        </div>
+        <div class="page-num" style="color: white;">06 / 06</div>
+    </div>
+
+</body>
+</html>
